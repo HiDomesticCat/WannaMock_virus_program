@@ -38,7 +38,7 @@
 
 ### 				我個人是開源項目的追隨者，自己使用的很多軟體都是開源的。像WannaFuxk的圖標示使用lnkspace製作、程式碼編輯器是使用emacs、C語言編譯器是使用GNU GCC來編譯的、、、等。所以我也以製作項目為我人生的目標。
 
-### 				以上的三點原因，使我開始想製作有關資訊安全的程式製作教學文檔。在我思索要開發什麼來做教學文檔時，我無意間瀏覽到WannaCry的維基百科，與資訊安全有關，我學習的C語言製作勒索軟件在是何不過了，所以WannaFuxk就此開始有了雛形出來。
+### 				以上的三點原因，使我開始想製作有關資訊安全的程式製作教學文檔。在我思索要開發什麼來做教學文檔時，我無意間瀏覽到[WannaCry的維基百科](https://zh.wikipedia.org/zh-tw/WannaCry)，與資訊安全有關，我學習的C語言製作勒索軟件在是何不過了，所以WannaFuxk就此開始有了雛形出來。
 
 ---
 
@@ -84,7 +84,7 @@
 
 <h2 id="4">4.RSA加密WannaFuxk上的實作</h2>
 
-### 						在講解RSA加密WannaFuxk上的實作前，我們先來看看RSA是如何進行加解密的。
+### 						在講解[RSA加密](https://zh.wikipedia.org/wiki/RSA加密演算法)WannaFuxk上的實作前，我們先來看看RSA是如何進行加解密的。
 
 
 
@@ -174,7 +174,7 @@ int main(void){
 
 ### 在做結尾前，我覺得不應該只教大家做電腦病毒，應該也要大家如何抵禦電腦病毒，所以我就在左思右想，要如何破解WannaFuxk病毒。我就想到WannaFuxk的RSA加密其實沒有多少保護力，所以我就想以此為突破口，其實非常簡單，現在教大家如何破解WannaFuxk。
 
-### 在破解WannaFuxk前，我們需要先安裝radare2，可以去它們的官網下載程式，要教學radare2我可能以後再做一期專題來教大家，這裡先不做說明，專注講如何破解WannaFuxk。
+### 在破解WannaFuxk前，我們需要先安裝[radare2](https://rada.re/n/)，可以去它們的官網[下載](https://radare.mikelloc.com/list)程式，要教學radare2我可能以後再做一期專題來教大家，這裡先不做說明，專注講如何破解WannaFuxk。
 
 ### 進cmd輸入
 
@@ -258,7 +258,7 @@ pdf @ sym.main
 
 <h2 id="7">7.感謝</h2>
 
-### markdown及其非昌好用的編輯器 Typora
+### [markdown](https://zh.wikipedia.org/wiki/Markdown)及其非昌好用的編輯器 [Typora](https://typora.io/)
 
 <img src="markdown.png" style="zoom:50%;" />
 
@@ -266,7 +266,7 @@ pdf @ sym.main
 
 ---
 
-### GNU 的 文字編輯器emacs和C語言編譯器GCC
+### GNU 的 文字編輯器[emacs](https://www.gnu.org/software/emacs/)和C語言編譯器[GCC](https://gcc.gnu.org/)
 
 ![](emacs.png)
 
@@ -274,13 +274,13 @@ pdf @ sym.main
 
 ---
 
-### 逆向工程利器radare2
+### 逆向工程利器[radare2](https://rada.re/n/)
 
 <img src="radare2.png" style="zoom: 67%;" />
 
 ---
 
-### github
+### [github](https://github.com/)
 
 <img src="github.jpg" style="zoom: 33%;" />
 
