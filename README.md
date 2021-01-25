@@ -2,7 +2,7 @@
 
 <h5 style="text-align:right">作者:HiCat</h5>
 
-<img src="WannaFuxk.png" style="zoom: 33%;" />
+<img src="WannaFuxk.jpg" style="zoom: 33%;" />
 
 <h1 style="font-size: 60px;color:red;text-align:center">FBI WARNING</h1>
 
