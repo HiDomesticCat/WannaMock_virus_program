@@ -290,7 +290,7 @@ pdf @ sym.main
 
 <h2 id="7">7.感謝</h2>
 
-### [markdown](https://zh.wikipedia.org/wiki/Markdown)及其非昌好用的編輯器 [Typora](https://typora.io/)
+### [markdown](https://zh.wikipedia.org/wiki/Markdown)及其非常好用的編輯器 [Typora](https://typora.io/)
 
 <img src="markdown.png" style="zoom:50%;" />
 
