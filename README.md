@@ -8,7 +8,7 @@
 
 <h1 style="color:red;text-align:center">警告以下內容僅用於學術用途，使用後有任何金錢或法律問題，作者將不負責</h1>
 
-#### 還有作者技術菜，有任何解釋不全或用語錯誤請諒解
+#### 還有作者技術菜，製作的程式簡單又不完善、有任何解釋不全或者用語錯誤，還請諒解
 
 ---
 
@@ -154,9 +154,9 @@ int main(void){
 
 
 
-### 使用快速冪取模演算法去可以簡單的實現RSA加密，快速冪取模演算法可以去[這裡](https://www.youtube.com/watch?v=GbDtCFhq20A)觀看詳細教程。以下簡單介紹快速冪取模演算法觀念:
+### 使用快速冪取模演算法可以簡單的實現RSA加密，快速冪取模演算法可以去[這裡](https://www.youtube.com/watch?v=GbDtCFhq20A)觀看詳細教程。以下簡單介紹快速冪取模演算法觀念:
 
-### RSA加密需要用大數(國家標準暨技術研究院[ NIST ]建議的RSA密鑰長度為至少2048位元)並算其e次放，一般長度電腦可以簡單解決。但當數字長度大到一個值時，電腦的儲存格會溢位而導致結果錯誤，所以我們需要快速冪取模演算法去解決這個問題。
+### RSA加密需要用極大數(國家標準暨技術研究院[ NIST ]建議的RSA密鑰長度至少2048位元)並算其e次方，一般長度的密碼，電腦可以簡單解決。但當數字長度大到一個值時，電腦的儲存格會溢位而導致結果錯誤，所以我們需要快速冪取模演算法去解決這個問題。
 
 ### 快速冪取模演算法是將長長度數字取餘數拆解成二的冪的短長度數字取餘數，像以下這樣
 
@@ -309,6 +309,24 @@ pdf @ sym.main
 ### 逆向工程利器[radare2](https://rada.re/n/)
 
 <img src="radare2.png" style="zoom: 67%;" />
+
+---
+
+### 流程圖製作神器[DIA](http://dia-installer.de/)
+
+![](D:\DATA\HiCat\virus_make\GitHub\Dia_logo.png)
+
+---
+
+### 圖形編輯專家[Inkscape](https://inkscape.org/zh-hant/)
+
+![](D:\DATA\HiCat\virus_make\GitHub\240px-Inkscape.logo.svg.png)
+
+---
+
+### 辦公好幫手[LibreOffice](https://zh-tw.libreoffice.org/)
+
+![](D:\DATA\HiCat\virus_make\GitHub\sw-libreoffice_1.png)
 
 ---
 
