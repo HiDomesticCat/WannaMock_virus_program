@@ -314,19 +314,19 @@ pdf @ sym.main
 
 ### 流程圖製作神器[DIA](http://dia-installer.de/)
 
-![](D:\DATA\HiCat\virus_make\GitHub\Dia_logo.png)
+![](D:\DATA\HiCat\virus_make\GitHub\Dia.png)
 
 ---
 
 ### 圖形編輯專家[Inkscape](https://inkscape.org/zh-hant/)
 
-![](D:\DATA\HiCat\virus_make\GitHub\240px-Inkscape.logo.svg.png)
+![](D:\DATA\HiCat\virus_make\GitHub\Inkscape.png)
 
 ---
 
 ### 辦公好幫手[LibreOffice](https://zh-tw.libreoffice.org/)
 
-![](D:\DATA\HiCat\virus_make\GitHub\sw-libreoffice_1.png)
+![](D:\DATA\HiCat\virus_make\GitHub\libreoffice.png)
 
 ---
 
