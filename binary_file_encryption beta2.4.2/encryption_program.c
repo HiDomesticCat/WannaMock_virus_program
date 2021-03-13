@@ -82,8 +82,6 @@ void file_read(char *MainPosition){
   }
   else{
     char file[500]; //À°§Uprocessed_original_file_name_readÅª¨úÀÉ®×
-    printf("%s\n", MainPosition);
-    system("pause");
     strcat(processed_original_file_name, MainPosition);
     strcat(processed_original_file_name, "\\");
     strcpy(file, MainPosition);
