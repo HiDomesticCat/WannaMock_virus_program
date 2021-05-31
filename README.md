@@ -1,8 +1,8 @@
-<h1 style="text-align:center">WannaFuxk勒索病毒製作報告</h1>
+<h1 style="text-align:center">WannaMock勒索病毒製作報告</h1>
 
 <h5 style="text-align:right">作者:HiCat</h5>
 
-<img src="WannaFuxk.jpg" style="zoom: 33%;" />
+<img src="WannaMock.jpg" style="zoom: 33%;" />
 
 <h1 style="font-size: 60px;color:red;text-align:center">FBI WARNING</h1>
 
@@ -16,13 +16,13 @@
 
 1. ###  [病毒程式製作初衷](#1)
 
-2. ### [WannaFuxk病毒製作歷程](#2)
+2. ### [WannaMock病毒製作歷程](#2)
 
-3. ### [WannaFuxk病毒本體介紹](#3)
+3. ### [WannaMock病毒本體介紹](#3)
 
-4. ### [RSA加密WannaFuxk上的實作](#4)
+4. ### [RSA加密WannaMock上的實作](#4)
 
-5. ### [破解WannaFuxk](#5)
+5. ### [破解WannaMock](#5)
 
 6. ### [將程式偽裝成.jpg照片檔](#6)
 
@@ -38,15 +38,15 @@
 
 ### 				我自主學習程式語言才不到兩年，學習的時常還沒有很多，因為我沒有特地去補習或買書來加強實力，所以常常需要使用網路來查詢資料以此來學習程式相關的知識。但在自學的這段日子裡，我發現我最常查到的網路資料都是英文的，只有少部分試中寫的。雖然寫程式會英文是必須的，但在學習程式中還要去翻譯英文，這樣的學習效率實在太低了。
 
-### 				我個人是開源項目的追隨者，自己使用的很多軟體都是開源的。像WannaFuxk的圖標示使用lnkspace製作、程式碼編輯器是使用emacs、C語言編譯器是使用GNU GCC來編譯的、、、等。所以我也以製作開源項目為我人生的目標。
+### 				我個人是開源項目的追隨者，自己使用的很多軟體都是開源的。像WannaMock的圖標示使用lnkspace製作、程式碼編輯器是使用emacs、C語言編譯器是使用GNU GCC來編譯的、、、等。所以我也以製作開源項目為我人生的目標。
 
-### 				以上的三點原因，使我開始想製作有關資訊安全的程式製作教學文檔。在我思索要開發什麼來做教學文檔時，我無意間瀏覽到[WannaCry的維基百科](https://zh.wikipedia.org/zh-tw/WannaCry)，與資訊安全有關，我學習的C語言製作勒索軟件在是何不過了，所以WannaFuxk就此開始有了雛形出來。
+### 				以上的三點原因，使我開始想製作有關資訊安全的程式製作教學文檔。在我思索要開發什麼來做教學文檔時，我無意間瀏覽到[WannaCry的維基百科](https://zh.wikipedia.org/zh-tw/WannaCry)，與資訊安全有關，我學習的C語言製作勒索軟件在是何不過了，所以WannaMock就此開始有了雛形出來。
 
 ---
 
-<h2 id="2">2.WannaFuxk病毒製作歷程</h2>
+<h2 id="2">2.WannaMock病毒製作歷程</h2>
 
-### 		WannaFuxk是以滾動開發的方式進行製作。
+### 		WannaMock是以滾動開發的方式進行製作。
 
 ### beta1.0版本是針對像txt檔的文字檔進行加密，製作流程還很簡陋。
 
@@ -68,15 +68,15 @@
 
 ---
 
-<h2 id="3">3.WannaFuxk病毒本體介紹</h2>
+<h2 id="3">3.WannaMock病毒本體介紹</h2>
 
-###							WannaFuxk介紹以最終版本(2.4.2)進行介紹。因為解密程式和加密程式的程式邏輯差不多，所以我們在此不多贅述解密程式。再詳細介紹加密程式的程式邏輯時，先放上加密程式的流程圖，讓大家能更容易理解WannaFuxk的製作邏輯。
+###							WannaMock介紹以最終版本(2.4.2)進行介紹。因為解密程式和加密程式的程式邏輯差不多，所以我們在此不多贅述解密程式。再詳細介紹加密程式的程式邏輯時，先放上加密程式的流程圖，讓大家能更容易理解WannaMock的製作邏輯。
 
 ![](flow_chart.jpeg)
 
-### 						可能會有人好奇怎麼沒有RSA加密?我其實也有嚐試將RSA加密引入文件加密的代碼中，但因為這樣效能實在會消耗龐大，和本人技術有限，所以我只好將RSA加密放進解密程式中對使用者輸入的密碼進行RSA加密來推進解密程式進行解密，詳細將在第四章[RSA加密WannaFuxk上的實作](#4)來介紹。
+### 						可能會有人好奇怎麼沒有RSA加密?我其實也有嚐試將RSA加密引入文件加密的代碼中，但因為這樣效能實在會消耗龐大，和本人技術有限，所以我只好將RSA加密放進解密程式中對使用者輸入的密碼進行RSA加密來推進解密程式進行解密，詳細將在第四章[RSA加密WannaMock上的實作](#4)來介紹。
 
-### 		當WannaFuxk的encryption_program.exe程式被使用者點擊後，先創建(字串函數)MainPosition，然後用system()去收集主資料夾的地址存入(字串函數)MainPosition中。進入file_search()中，使用system()收集主資料夾可加密的檔案，並存入original_file_name.txt中。再使用(FILE函數)* original_file_name_read去讀取original_file_name.txt，去除WannaFuxk使用的檔案後使用(FILE函數)* processed_original_file_name_read存入processed_original_file_name.txt中。
+### 		當WannaMock的encryption_program.exe程式被使用者點擊後，先創建(字串函數)MainPosition，然後用system()去收集主資料夾的地址存入(字串函數)MainPosition中。進入file_search()中，使用system()收集主資料夾可加密的檔案，並存入original_file_name.txt中。再使用(FILE函數)* original_file_name_read去讀取original_file_name.txt，去除WannaMock使用的檔案後使用(FILE函數)* processed_original_file_name_read存入processed_original_file_name.txt中。
 
 ### 		離開file_search()，然後進入file_read()，使用(FILE函數)* processed_original_file_name_read去讀processed_original_file_name.txt，然後用(字串函數)processed_original_file_name去收集可加密檔案的檔名，並將可加密檔案的檔名加上.VIRUS並存入encryption_file_name。
 
@@ -90,9 +90,9 @@
 
 ---
 
-<h2 id="4">4.RSA加密WannaFuxk上的實作</h2>
+<h2 id="4">4.RSA加密WannaMock上的實作</h2>
 
-### 						在講解[RSA加密](https://zh.wikipedia.org/wiki/RSA加密演算法)WannaFuxk上的實作前，我們先來看看RSA是如何進行加解密的。
+### 						在講解[RSA加密](https://zh.wikipedia.org/wiki/RSA加密演算法)WannaMock上的實作前，我們先來看看RSA是如何進行加解密的。
 
 
 
@@ -194,13 +194,13 @@ int main(void){
 
 
 
-### 現在開始來講解RSA加密在WannaFuxk的實作。
+### 現在開始來講解RSA加密在WannaMock的實作。
 
-### 我一開始設計WannaFuxk時，本來是打算直接將RSA加密實際應用在檔案加密的工作環節中。但當我真的去實際開發時，我發現了兩個問題，一是我的程式編程能力有限，自己製作出來的程式碼都有瑕疵；二是RSA加密的速度實在是太慢了。這兩點因素導致我最後只好將其從檔案加密中刪除。
+### 我一開始設計WannaMock時，本來是打算直接將RSA加密實際應用在檔案加密的工作環節中。但當我真的去實際開發時，我發現了兩個問題，一是我的程式編程能力有限，自己製作出來的程式碼都有瑕疵；二是RSA加密的速度實在是太慢了。這兩點因素導致我最後只好將其從檔案加密中刪除。
 
 ### 我最後不得以只好將RSA加密應用在金鑰解密的工作上。
 
-### 程式將要使用者輸入解密金鑰，解密金鑰經過RSA解密後輸出原始金鑰，程式在檢查原始金鑰是否正確。其實沒有什麼實際的用途，只是我想將RSA加密應用進WannaFuxk而已。
+### 程式將要使用者輸入解密金鑰，解密金鑰經過RSA解密後輸出原始金鑰，程式在檢查原始金鑰是否正確。其實沒有什麼實際的用途，只是我想將RSA加密應用進WannaMock而已。
 
 ### (原始金鑰)123 -> 183(加密後的金鑰)
 
@@ -210,11 +210,11 @@ int main(void){
 
 ---
 
-<h2 id="5">5.破解WannaFuxk</h2>
+<h2 id="5">5.破解WannaMock</h2>
 
-### 在做結尾前，我覺得不應該只教大家做電腦病毒，應該也要大家如何抵禦電腦病毒，所以我就在左思右想，要如何破解WannaFuxk病毒。我就想到WannaFuxk的RSA加密其實沒有多少保護力，所以我就想以此為突破口，其實非常簡單，現在教大家如何破解WannaFuxk。
+### 在做結尾前，我覺得不應該只教大家做電腦病毒，應該也要大家如何抵禦電腦病毒，所以我就在左思右想，要如何破解WannaMock病毒。我就想到WannaMock的RSA加密其實沒有多少保護力，所以我就想以此為突破口，其實非常簡單，現在教大家如何破解WannaMock。
 
-### 在破解WannaFuxk前，我們需要先安裝[radare2](https://rada.re/n/)，可以去它們的官網[下載](https://radare.mikelloc.com/list)程式，要教學radare2我可能以後再做一期專題來教大家，這裡先不做說明，專注講如何破解WannaFuxk。
+### 在破解WannaMock前，我們需要先安裝[radare2](https://rada.re/n/)，可以去它們的官網[下載](https://radare.mikelloc.com/list)程式，要教學radare2我可能以後再做一期專題來教大家，這裡先不做說明，專注講如何破解WannaMock。
 
 ### 進cmd輸入
 
@@ -280,7 +280,7 @@ pdf @ sym.main
 
 ### 此時我們exit退出radare2後，點decryption_program.exe，然後輸入金鑰，不管我們輸入多少，程式都會幫我們進行解密。
 
-### WannaFuxk的解密我們就介紹到這邊。
+### WannaMock的解密我們就介紹到這邊。
 
 ---
 <h2 id="6">6.將程式偽裝成.jpg照片檔</h2>
@@ -345,11 +345,11 @@ taskkill /im conhost.exe
 
 <h2 id="7">7.作者感想</h2>
 
-### 作者本人編程學習不到兩年，CTF的逆向工程自學也不到一個月，在製作WannaFuxk和寫這個教學文檔時，可能有程式設計不好或文檔寫不好的地方，還請大家多多見諒。
+### 作者本人編程學習不到兩年，CTF的逆向工程自學也不到一個月，在製作WannaMock和寫這個教學文檔時，可能有程式設計不好或文檔寫不好的地方，還請大家多多見諒。
 
 ### 本人在製作這個專案時，也因此學習到很多知識，像C語言的檔案讀寫、遞迴的熟練和RSA加密。所以我想在做一期教學文檔是關於radare2逆向工程的教學及實做。
 
-### 在製作WannaFuxk時，我也遇到了很多問題要克服，英文資料的閱讀、有空格字符檔名的檔案加密、子資料夾檔案加密、RSA加密和製作這個文檔的乏味時間等，最後我還是打擺重重難關做完了WannaFuxk這個項目，我本人是還蠻滿意這個項目的。
+### 在製作WannaMock時，我也遇到了很多問題要克服，英文資料的閱讀、有空格字符檔名的檔案加密、子資料夾檔案加密、RSA加密和製作這個文檔的乏味時間等，最後我還是打擺重重難關做完了WannaMock這個項目，我本人是還蠻滿意這個項目的。
 
 ### 在此感謝大家閱讀完我的教學文章，今後我的其他教學文檔或開源項目請大家也繼續支持，我是Hi Cat，我們之後見。
 
