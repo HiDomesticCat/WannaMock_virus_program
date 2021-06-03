@@ -1,8 +1,4 @@
-/*
-  ÅÊßæ¡¨2021/1/21
-  É¢Ï¯:ÄÀËëÆÍ
-  ÄùÕ©:ÅäÓÑá£È¢ÄØØøÉù¡¢áÃëæÔºÊÑÌÏê´öüá£È¢¡¤
-*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -107,8 +103,7 @@ void decryption(char *text1, char *text2){
   while(!feof(fptr1)){
    fread(&ch, sizeof(ch), 1, fptr1);
     if(!feof(fptr1)){
-      //æØÙïÎûÇâÅÉ
-      
+
       fwrite(&ch, sizeof(ch), 1, fptr2);
     }
   }
