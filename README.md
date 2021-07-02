@@ -20,7 +20,7 @@
 
 2. ### [WannaMock病毒製作歷程](#2)
 
-3. [Wanna Mock 未來規劃](#3)
+3. ### [Wanna Mock 未來規劃](#3)
 
 4. ### [WannaMock病毒本體介紹](#4)
 
