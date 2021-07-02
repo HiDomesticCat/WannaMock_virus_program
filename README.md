@@ -10,18 +10,25 @@
 
 #### 還有作者技術菜，製作的程式簡單又不完善、有任何解釋不全或者用語錯誤，還請諒解
 
-# [想觀看2.6版以前的教學文檔請點這](material\README_2.6_before.md)
+# [想觀看2.6版以前的教學文檔請點這](material/README_2.6_before.md)
 
 ---
 
 ## 目錄:
 
 1. ###  [病毒程式製作初衷](#1)
+
 2. ### [WannaMock病毒製作歷程](#2)
-3. ### [WannaMock病毒本體介紹](#3)
-4. ### [RSA加密WannaMock上的實作](#4)
-5. ### [作者感想](#7)
-6. ### [感謝](#8)
+
+3. [Wanna Mock 未來規劃](#3)
+
+4. ### [WannaMock病毒本體介紹](#4)
+
+5. ### [RSA加密WannaMock上的實作](#5)
+
+6. ### [作者感想](#6)
+
+7. ### [感謝](#7)
 
 ---
 
@@ -102,7 +109,7 @@
 
 ---
 
-<h2 id="4">4.RSA加密WannaMock上的實作</h2>
+<h2 id="5">5.RSA加密WannaMock上的實作</h2>
 
 ### 						在講解[RSA加密](https://zh.wikipedia.org/wiki/RSA加密演算法)WannaMock上的實作前，我們先來看看RSA是如何進行加解密的。
 
@@ -222,7 +229,7 @@ int main(void){
 
 
 
-<h2 id="7">7.作者感想</h2>
+<h2 id="6">6.作者感想</h2>
 
 ### 作者本人編程學習不到兩年，在製作WannaMock和寫這個教學文檔時，可能有程式設計不好或文檔寫不好的地方，還請大家多多見諒。
 
@@ -240,7 +247,7 @@ int main(void){
 
 ---
 
-<h2 id="8">8.感謝</h2>
+<h2 id="7">7.感謝</h2>
 
 ### [markdown](https://zh.wikipedia.org/wiki/Markdown)及其非常好用的編輯器 [Typora](https://typora.io/)
 
